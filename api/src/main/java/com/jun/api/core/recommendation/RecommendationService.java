@@ -16,5 +16,5 @@ public interface RecommendationService {
     @GetMapping(
         value    = "/recommendation",
         produces = "application/json")
-    List<Recommendation> getRecommendations(@RequestParam(value = "productId", required = true) int productId);
+    List<RecommendationDTO> getRecommendations(@RequestParam(value = "productId", required = true) int productId);
 }
